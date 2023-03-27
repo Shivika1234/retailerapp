@@ -1,0 +1,12 @@
+.titlewomen{
+list-style: none;
+padding: 2.5vw;
+}
+
+.titleprice{
+    margin-top: 1vw;
+    /* margin-left: 1vw; */
+}
+li{
+    padding: 0.3vw;
+}
