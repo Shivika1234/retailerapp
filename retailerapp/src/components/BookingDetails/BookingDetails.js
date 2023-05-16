@@ -10,6 +10,8 @@ import TableRow from '@mui/material/TableRow';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import NavbarRetailer from '../../files/NavbarRetailer';
+import SidebarRetailer from '../../files/SidebarRetailer';
 
 function createData(name, code, population, size) {
     const density = population / size;
@@ -39,6 +41,11 @@ function createData(name, code, population, size) {
     setPage(0);
   };
     return (
+      <>
+      <NavbarRetailer/>
+      <div style={{display:"flex"}}>
+   
+      <SidebarRetailer/> 
         <div style={{marginTop:"1vw",width:"65vw",marginLeft:"10vw"}}>
         <h3 style={{textAlign:"center",fontWeight:"normal",marginTop:"1vw"}}> Account Information </h3>
  
@@ -118,6 +125,8 @@ function createData(name, code, population, size) {
         />
       </Paper>   
         </div>
+        </div>
+        </>
     );
 }
 

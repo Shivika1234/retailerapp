@@ -8,23 +8,24 @@ import Product from './components/Product/Product'
 import SidebarRetailer from './files/SidebarRetailer';
 import Navbar from './files/NavbarRetailer'
 import NavbarRetailer from './files/NavbarRetailer';
+import Login from './files/Login';
+import Signup from './files/Signup';
 
 function App() {
   return (
    <>
-    <NavbarRetailer/>
-    <div style={{display:"flex"}}>
- 
-    <SidebarRetailer/>  
+   
  	
    <Routes>
    <Route path="/dashboard" element={<Dashboard/>} />
    <Route path="/banking" element={<Banking/>} />
    <Route path="/bookingdetails" element={<BookingDetails/>} />
    <Route path="/product" element={<Product/>} />
+   <Route path="/" element={<Login/>} />
+   <Route path="/signup" element={<Signup/>} />
 
    </Routes>
-    </div>
+   
     </>
   );
 }

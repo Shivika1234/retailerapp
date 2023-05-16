@@ -16,10 +16,11 @@ function getItem(label, key, icon, children) {
   };
 }
 const items = [
-  getItem(<NavLink style={{textDecoration:"none",fontSize:"1.1vw"}} to="/dashboard">Dashboard</NavLink>, '1', <PieChartOutlined />),
-  getItem(<NavLink style={{textDecoration:"none",fontSize:"1.1vw"}} to="/banking">Banking</NavLink>, '2', <DesktopOutlined />),
-  getItem(<NavLink style={{textDecoration:"none",fontSize:"1.1vw"}} to="/bookingdetails">Booking details</NavLink>, '3', <DesktopOutlined />),
-  getItem(<NavLink style={{textDecoration:"none",fontSize:"1.1vw"}} to="/product">Product</NavLink>, '4', <DesktopOutlined />),
+  getItem(<NavLink style={{textDecoration:"none",fontSize:"1.1vw"}} to="/">Login in</NavLink>, '1', <PieChartOutlined />),
+  getItem(<NavLink style={{textDecoration:"none",fontSize:"1.1vw"}} to="/dashboard">Dashboard</NavLink>, '2', <PieChartOutlined />),
+  getItem(<NavLink style={{textDecoration:"none",fontSize:"1.1vw"}} to="/banking">Banking</NavLink>, '3', <DesktopOutlined />),
+  getItem(<NavLink style={{textDecoration:"none",fontSize:"1.1vw"}} to="/bookingdetails">Booking details</NavLink>, '4', <DesktopOutlined />),
+  getItem(<NavLink style={{textDecoration:"none",fontSize:"1.1vw"}} to="/product">Product</NavLink>, '5', <DesktopOutlined />),
 
  
  

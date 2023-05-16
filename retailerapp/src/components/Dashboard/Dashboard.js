@@ -5,6 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
 import { Chart } from "react-google-charts";
+import NavbarRetailer from '../../files/NavbarRetailer';
+import SidebarRetailer from '../../files/SidebarRetailer';
 
 
 export const data = [
@@ -38,6 +40,11 @@ function Dashboard() {
 
 
     return (
+      <>
+      <NavbarRetailer/>
+      <div style={{display:"flex"}}>
+   
+      <SidebarRetailer/>  
         <div style={{width:"90vw",marginLeft:"0vw"}}>
         <Container>
         <Row>
@@ -137,6 +144,8 @@ function Dashboard() {
         
         </Container>
         </div>
+        </div>
+        </>
     );
 }
 
