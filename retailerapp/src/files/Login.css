@@ -1,0 +1,12 @@
+.image{
+    background: url(../images//bg.jpg );
+    background-size: contain;
+}
+.signUpContainer{
+    border: 1px solid rgb(105, 102, 102);
+    background-color: white;
+    border-radius: 2vw;
+    width: 5vw;
+    max-width: 700px !important;
+   
+}

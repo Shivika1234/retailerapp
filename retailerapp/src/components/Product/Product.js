@@ -2,9 +2,16 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Addinventory from './Addinventory';
 import Viewinventory from './Viewinventory';
+import NavbarRetailer from '../../files/NavbarRetailer';
+import SidebarRetailer from '../../files/SidebarRetailer';
 
 function Product() {
     return (
+      <>
+      <NavbarRetailer/>
+      <div style={{display:"flex"}}>
+   
+      <SidebarRetailer/>
       <div>
         <Tabs
         defaultActiveKey="profile"
@@ -21,6 +28,8 @@ function Product() {
      
       </Tabs>
       </div>
+      </div>
+      </>
     );
 }
 

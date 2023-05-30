@@ -9,7 +9,7 @@ import SidebarRetailer from './files/SidebarRetailer';
 import Navbar from './files/NavbarRetailer'
 import NavbarRetailer from './files/NavbarRetailer';
 import Login from './files/Login';
-import Signup from './files/Signup';
+import Signup from './files/signuppage'
 
 function App() {
   return (

@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState ,useEffect} from 'react';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 const { Header, Content, Footer, Sider } = Layout;
 
  export default function NavbarRetailer() {
+    const [name, setName] = useState('')
 
+useEffect(()=>{
+  const jwtdata = JSON.parse(localStorage.getItem('user'))
+  console.log("jwtdatadata", jwtdata[0].name )
+   		setName(jwtdata[0]);
+	 
+},[])
     const {
         token: { colorBgContainer },
       } = theme.useToken();
+
+      const data = JSON.stringify(localStorage.getItem('data'))
     return (
         <div>
         <Header
@@ -25,7 +34,7 @@ const { Header, Content, Footer, Sider } = Layout;
 
         }}
       > 
-      <p style={{color:"white",float:"right",marginRight:"1vw",alignItems:"center"}}> Shreya Jain </p> 
+      <p style={{color:"white",float:"right",marginRight:"1vw",alignItems:"center"}}> {name.name} </p> 
      <img  style={{height:"2.5vw",width:"3vw",borderRadius:"2vw",float:"right",marginRight:"1vw",marginTop:"0.8vw"}} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzNNE2la9vfc01CPWiygaruJgbWA-shldvrg&usqp=CAU'/>
       </Header>
       
